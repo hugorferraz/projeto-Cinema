@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link  rel="shortcut icon" href="favicon.ico">
+<title> HB Movie. </title>
+<style>
+
+body {
+margin-top:0px;
+background-repeat: no-repeat;
+background-color: #0000CD;
+}
+
+figure{
+ margin-top:0px;
+ margin-left: 0px;
+ }
+
+ul{
+list-style-type: none;
+margin-top: 125px;
+margin-left: 0px;
+padding: 0;
+width: 100%;
+background-color: #87CEFA;
+position: absolute;
+top:0;
+font-family: cursive;
+}
+
+li{
+float: left;
+border-right: 1px solid yellow;
+}
+
+li a {
+display: inline-block;
+color: #333;
+padding: 14px 16px;
+text-decoration: none;
+text-align: center;
+}
+
+.active {
+background-color: #87CEFA;
+color: #333;
+}
+
+li a:hover:not(.active) {
+background-color: #B0E0E6;
+color: white;
+}
+
+.cd{
+background-color: SteelBlue;
+}
+
+form {
+margin-top: 100px;
+}
+
+input[type=button], input[type=submit]{
+background-color:#DDA0DD;
+border: 2px solid DCDCDC ;
+color: white;
+padding: 16px 32px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+input[type=text] {
+width: 50%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid #DCDCDC;
+border-radius: 4px;
+background-color: #6495ED;
+}
+
+input[type=date] {
+width: 50%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid #DCDCDC;
+border-radius: 4px;
+background-color: #6495ED;
+}
+
+input[type=email] {
+width: 50%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid #DCDCDC;
+border-radius: 4px;
+background-color: #6495ED;
+}
+
+input[type=password] {
+width: 50%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid #DCDCDC;
+border-radius: 4px;
+background-color: #6495ED;
+}
+
+input[type=text]:focus {
+background-color: 	#48D1CC;
+}
+
+input[type=date]:focus {
+background-color: 	#48D1CC;
+}
+
+input[type=email]:focus {
+background-color: 	#48D1CC;
+}
+
+input[type=password]:focus {
+background-color: 	#48D1CC;
+}
+
+label { 
+color: white;
+}
+
+h2 {
+color: white;
+font-size: 25px;
+}
+
+fieldset{
+color: yellow;
+}
+</style>
+</head>
+
+<body>
+ <figure>
+ <img src="BH3.png" width="1599px" height="150px">
+ 
+ </figure>
+ 
+ <ul>
+ <li><a class="active" href="index.html">Inicio</a></li>
+ <li class="cd"><a href="cinema cadastro">Cadastro</a></li>
+ <li><a href="programacao.html">Programação</a></li>
+ <li><a href="filme em ctz.html">Filmes em Cartaz</a></li>
+<li><a href="">Venda online</a></li>
+<li><a href="">Produtos e Serviços</a></li> 
+</ul>
+
+<form>
+<fieldset>
+<legend> Dados Pessoais </legend>
+<label for=nome> Nome Completo:  </label><br>
+<input type="text" id="nome" value="" required>
+<br>
+<br>
+<label for=dt_nasc> Data de Nascimento: </label><br>
+<input type="date" id="dt_nasc" name="nascimento" value=""required>
+<br>
+<br>
+<label for=Número_do_cel> Telefone: </label><br>
+<input type="text" id="Número_do_cel" name="Telefone" value=""required>
+<br>
+<br>
+<label for=CPF> CPF: </label><br>
+<input type="text" id="CPF" name="cpf" value=""required>
+<br>
+<br>
+<label for=cep> CEP: </label><br>
+<input type="text" id="cep" value=""required>
+<h2> Gênero </h2>
+<input type="radio" id="masculino" name="gênero" value="masculino">
+<label for=masculino>Masculino</label><br>
+<input type="radio" id="feminino" name="gênero" value="feminino">
+<label for=feminino>Feminino</label><br>
+<input type="radio" id="pfn" name="gênero" value="pfn">
+<label for=pfn> Prefiro não informar</label><br>
+</fieldset>
+<br>
+<fieldset>
+<legend>  Seu cadastro </legend>
+<label for=email> E-mail:</label><br>
+<input type="email" id=email name="email" value=""required>
+<br>
+<label for=senha> Senha: </label><br>
+<input type="password" id=senha name="Senha" value=""required><br>
+</fieldset>
+<br>
+
+<input type="submit" value="Enviar">
+
+</form>
+</body>
+</html>
